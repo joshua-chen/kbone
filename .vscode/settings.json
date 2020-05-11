@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": false,
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "workbench.settings.openDefaultSettings": true
+}
