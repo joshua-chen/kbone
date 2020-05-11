@@ -9,8 +9,7 @@
 * webpack、es6、babel、hot reload、cli、vue-router、vuex，你想要的都有
 
 ## 开发
-
-cnpm install rimraf --save-dev
+cnpm install
 
 * Web 端：直接浏览器访问 localhost:8080/ 即可看到效果。
 
@@ -57,17 +56,20 @@ npm run build:mp
 │  ├─ mp                     // 小程序端目标代码目录，使用微信开发者工具打开，用于生产环境
 │  └─ web                    // web 端编译出的文件，用于生产环境
 ├─ src
-│  ├─ common                 // 通用组件
-│  ├─ mp                     // 小程序端入口目录
-│  │  ├─ home                // 小程序端 home 页面
-│  │  │  └─ main.mp.js       // 小程序端入口文件
-│  │  └─ other               // 小程序端 other 页面
-│  │     └─ main.mp.js       // 小程序端入口文件
-│  ├─ detail                 // detail 页面
-│  ├─ home                   // home 页面
-│  ├─ list                   // list 页面
+│  ├─ config                 // 配置目录
+│  │  ├─ entry.mp.js         // 小程序端 入口页面配置
+│  │  └─ settings.js         // 系统配置信息
+│  ├─ components             // 通用组件目录
+│  ├─ pages                  // 页面目录
+│  │  ├─ home                // home页面（页面名称作为目录）
+│  │  │  ├─ Index.vue        // 页面内容
+│  │  │  ├─ main.mp.js       // 小程序端 页面入口文件
+│  │  │  └─ web.js           // web端 业务js
+│  │  └─ other               // 其他页面 
 │  ├─ router                 // vue-router 路由定义
 │  ├─ store                  // vuex 相关目录
+│  ├─ app.mp.css             // 小程序端 入口主样式
+│  ├─ app.mp.js              // 小程序端 主入口
 │  ├─ App.vue                // Web 端入口主视图
 │  └─ main.js                // Web 端入口文件
 └─ index.html                // Web 端入口模板
